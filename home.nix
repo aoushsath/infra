@@ -28,6 +28,8 @@
     zola
   ];
 
+  fonts.fontconfig.enable = true;
+
   # Git
   programs.git = {
     enable = true;
