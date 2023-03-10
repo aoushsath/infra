@@ -21,6 +21,7 @@
 
   home.packages = with pkgs; [
     fzf
+    gcc       # Needed for rust
     ibm-plex
     ripgrep
     rustup
