@@ -72,10 +72,10 @@ end
 
 local nvim_lsp = require("lspconfig")
 local servers = {
+    "lua_ls",
     "nil_ls",
     "pyright",
     "rust_analyzer",
-    "sumneko_lua",
 }
 
 for _, server in ipairs(servers) do
