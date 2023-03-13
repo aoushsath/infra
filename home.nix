@@ -56,6 +56,31 @@
     };
   };
 
+  # Helix
+  programs.helix = {
+    enable = true;
+    settings = {
+      theme = "gruvbox_light";
+      editor = {
+        cursorline = true;
+        cursor-shape.insert = "bar";
+        indent-guides = {
+          render = true;
+          skip-levels = 1;
+        };
+        true-color = true;
+        whitespace = {
+          render = {
+            tab = "all";
+          };
+          characters = {
+            tab = "→";
+          };
+        };
+      };
+    };
+  };
+
   # Neovim
   programs.neovim = {
     enable = true;
