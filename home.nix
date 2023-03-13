@@ -27,6 +27,12 @@
     rustup
     trashy
     zola
+
+    # Language servers
+    nil
+    nodePackages.pyright
+    rust-analyzer
+    sumneko-lua-language-server
   ];
 
   fonts.fontconfig.enable = true;
@@ -91,12 +97,6 @@
       nvim-lspconfig
       nvim-treesitter
       telescope-nvim
-    ];
-    extraPackages = with pkgs; [
-      nil
-      nodePackages.pyright
-      rust-analyzer
-      sumneko-lua-language-server
     ];
     extraLuaConfig = ''
       ${ builtins.readFile ./nvim/init.lua }
