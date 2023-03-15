@@ -23,6 +23,7 @@
     fzf
     gcc       # Needed for rust
     ibm-plex
+    netlify-cli
     ripgrep
     rustup
     trashy
