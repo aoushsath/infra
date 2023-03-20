@@ -69,6 +69,7 @@
     settings = {
       theme = "gruvbox_light";
       editor = {
+        mouse = false;
         cursorline = true;
         cursor-shape.insert = "bar";
         indent-guides = {
