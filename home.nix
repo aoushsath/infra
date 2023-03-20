@@ -27,6 +27,7 @@
     ripgrep
     rustup
     trashy
+    tree
     zola
 
     # Language servers
