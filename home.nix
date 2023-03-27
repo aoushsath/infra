@@ -39,6 +39,10 @@
 
   fonts.fontconfig.enable = true;
 
+  # Gpg
+  programs.gpg.enable = true;
+  services.gpg-agent.enable = true;
+
   # Git
   programs.git = {
     enable = true;
