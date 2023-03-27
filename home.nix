@@ -84,9 +84,11 @@
         true-color = true;
         whitespace = {
           render = {
+            space = "all";
             tab = "all";
           };
           characters = {
+            space = ".";
             tab = "→";
           };
         };
