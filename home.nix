@@ -153,4 +153,17 @@
       bind r source-file ~/.config/tmux/tmux.conf \; display "Configuration reloaded!"
     '';
   };
+
+  # Zsh
+  programs.zsh = {
+    enable = true;
+    dotDir = ".config/zsh";
+    shellAliases = {
+      ls = "ls --color=auto";
+      hm = "home-manager";
+    };
+    history.size = 5000;
+    enableSyntaxHighlighting = true;
+    enableAutosuggestions = true;
+  };
 }
