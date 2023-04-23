@@ -109,4 +109,4 @@ vim.keymap.set("n", "<leader>th", builtin.help_tags, {})
 
 -- Colorscheme
 vim.opt.background = "light"
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme zenbones")

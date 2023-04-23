@@ -106,6 +106,8 @@
       nvim-lspconfig
       nvim-treesitter
       telescope-nvim
+      lush-nvim
+      zenbones-nvim
     ];
     extraLuaConfig = ''
       ${ builtins.readFile ./nvim/init.lua }
