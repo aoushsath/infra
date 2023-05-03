@@ -29,8 +29,10 @@
     trashy
     tree
     zola
+    go
 
     # Language servers
+    gopls
     nil
     nodePackages.pyright
     rust-analyzer

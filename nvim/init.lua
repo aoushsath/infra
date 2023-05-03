@@ -72,6 +72,7 @@ end
 
 local nvim_lsp = require("lspconfig")
 local servers = {
+    "gopls",
     "lua_ls",
     "nil_ls",
     "pyright",
