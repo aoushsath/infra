@@ -30,13 +30,6 @@
     tree
     zola
     go
-
-    # Language servers
-    gopls
-    nil
-    nodePackages.pyright
-    rust-analyzer
-    sumneko-lua-language-server
   ];
 
   fonts.fontconfig.enable = true;
@@ -82,6 +75,13 @@
       telescope-nvim
       lush-nvim
       zenbones-nvim
+    ];
+    extraPackages = with pkgs; [
+      gopls
+      nil
+      nodePackages.pyright
+      rust-analyzer
+      sumneko-lua-language-server
     ];
     extraLuaConfig = ''
       ${ builtins.readFile ./nvim/init.lua }
