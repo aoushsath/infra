@@ -30,6 +30,7 @@
     tree
     zola
     go
+    zig
   ];
 
   imports = [

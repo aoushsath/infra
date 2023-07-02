@@ -77,6 +77,7 @@ local servers = {
     "nil_ls",
     "pyright",
     "rust_analyzer",
+    "zls",
 }
 
 for _, server in ipairs(servers) do

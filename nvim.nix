@@ -19,6 +19,7 @@
       nodePackages.pyright
       rust-analyzer
       sumneko-lua-language-server
+      zls
     ];
     extraLuaConfig = ''
       ${ builtins.readFile ./nvim/init.lua }
