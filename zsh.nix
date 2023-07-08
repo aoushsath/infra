@@ -11,7 +11,7 @@
       tree = "tree -C";
     };
     history.size = 5000;
-    enableSyntaxHighlighting = true;
+    syntaxHighlighting.enable = true;
     enableAutosuggestions = true;
   };
 }
