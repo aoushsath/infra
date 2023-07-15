@@ -10,14 +10,16 @@
       nvim-lspconfig
       nvim-treesitter
       telescope-nvim
-      lush-nvim
-      gruvbox
+
+      lsp-zero-nvim
+      nvim-cmp
+      cmp-nvim-lsp
+      luasnip
     ];
     extraPackages = with pkgs; [
       gopls
       nil
       nodePackages.pyright
-      rust-analyzer
       sumneko-lua-language-server
       zls
     ];

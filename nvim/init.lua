@@ -80,9 +80,33 @@ local servers = {
     "zls",
 }
 
+local cmp = require("cmp")
+
+cmp.setup({
+    snippet = {
+        expand = function(args)
+            require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+        end,
+    },
+    mapping = cmp.mapping.preset.insert({
+        ['<C-b>'] = cmp.mapping.scroll_docs(-4),
+        ['<C-f>'] = cmp.mapping.scroll_docs(4),
+        ['<C-Space>'] = cmp.mapping.complete(),
+        ['<C-e>'] = cmp.mapping.abort(),
+        ['<CR>'] = cmp.mapping.confirm({ select = false }),
+    }),
+    sources = cmp.config.sources({
+        { name = 'nvim_lsp' },
+    }, {
+        { name = 'buffer' },
+    })
+})
+
+local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
 for _, server in ipairs(servers) do
     nvim_lsp[server].setup {
         on_attach = on_attach,
+        capabilities = lsp_capabilities
     }
 end
 
@@ -104,6 +128,7 @@ vim.keymap.set("n", "<leader>l", "<cmd>wincmd l<cr>")
 
 -- Telescope
 local builtin = require("telescope.builtin")
+
 vim.keymap.set("n", "<leader>tf", builtin.find_files, {})
 vim.keymap.set("n", "<leader>tb", builtin.buffers, {})
 vim.keymap.set("n", "<leader>ts", builtin.live_grep, {})
@@ -111,4 +136,4 @@ vim.keymap.set("n", "<leader>th", builtin.help_tags, {})
 
 -- Colorscheme
 vim.opt.background = "light"
-vim.cmd("colorscheme zenbones")
+vim.cmd("colorscheme gruvbox")
