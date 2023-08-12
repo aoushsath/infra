@@ -21,11 +21,10 @@
 
   home.packages = with pkgs; [
     fzf
-    gcc       # Needed for rust
     ibm-plex
+    recursive
     netlify-cli
     ripgrep
-    rustup
     trashy
     tree
     zola
