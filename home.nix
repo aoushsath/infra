@@ -30,6 +30,7 @@
     zola
     go
     zig
+    nodePackages.tailwindcss
   ];
 
   imports = [
