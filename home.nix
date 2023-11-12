@@ -3,8 +3,8 @@
 {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
-  home.username = "tosh";
-  home.homeDirectory = "/home/tosh";
+  home.username = "ashtuohsa";
+  home.homeDirectory = "/home/ashtuohsa";
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
@@ -21,7 +21,6 @@
 
   home.packages = with pkgs; [
     fzf
-    ibm-plex
     recursive
     netlify-cli
     ripgrep
@@ -38,13 +37,7 @@
   ./nvim.nix
   ./starship.nix
   ./tmux.nix
-  ./zsh.nix
   ];
 
   fonts.fontconfig.enable = true;
-
-  # Gpg
-  programs.gpg.enable = true;
-  services.gpg-agent.enable = true;
-  services.gpg-agent.pinentryFlavor = "gnome3";
 }

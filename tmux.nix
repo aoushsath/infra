@@ -33,6 +33,7 @@
 
       # Statusline
       set -g status-left-length 20
+      set -g status-right-length 50
       set -g status-style fg=colour0,bg=colour15
       setw -g window-status-current-style fg=colour7,bg=colour5
       setw -g message-style fg=colour15,bg=colour3

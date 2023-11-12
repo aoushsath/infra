@@ -2,8 +2,8 @@
 {
   programs.git = {
     enable = true;
-    userName = "Tosh";
-    userEmail = "git@chaoticenginerd.com";
+    userName = "Aashutosh";
+    userEmail = "119551649+ashtuohsa@users.noreply.github.com";
     aliases = {
       a = "add";
       c = "commit";
@@ -14,7 +14,7 @@
       sdf = "diff --staged";
     };
     signing = {
-      key = "git@chaoticenginerd.com";
+      key = "119551649+ashtuohsa@users.noreply.github.com";
       signByDefault = true;
     };
     extraConfig = {
